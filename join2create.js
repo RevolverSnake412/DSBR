@@ -48,7 +48,7 @@ module.exports = function (client) {
               //delete it from the map
               jointocreatemap.delete(`tempvoicechannel_${oldState.guild.id}_${oldState.channelID}`); 
               //log that it is deleted
-              console.log(" :: " + oldState.member.user.username + "#" + oldState.member.user.discriminator + " :: Room wurde gelöscht")
+              console.log(" :: " + oldState.member.user.username + "#" + oldState.member.user.discriminator + " :: Room has been deleted")
               //delete the voice channel
               return vc.delete(); 
           }
@@ -73,7 +73,7 @@ module.exports = function (client) {
           //delete it from the map
           jointocreatemap.delete(`tempvoicechannel_${oldState.guild.id}_${oldState.channelID}`); 
          //log it 
-          console.log(" :: " + oldState.member.user.username + "#" + oldState.member.user.discriminator + " :: Room wurde gelöscht")
+          console.log(" :: " + oldState.member.user.username + "#" + oldState.member.user.discriminator + " :: Room has been deleted")
         //delete the room
           return vc.delete(); 
       }
